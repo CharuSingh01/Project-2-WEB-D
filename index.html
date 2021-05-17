@@ -1,0 +1,110 @@
+<html>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+        body{
+            font-family: 'Poppins';
+            line-height: 1.4;
+            background-color: aquamarine;
+            width: 500px;
+            margin:auto;
+            color:white;
+        }
+        form {
+background: rgb(0, 0, 0);
+padding: 2.5rem 2.5rem;
+border-radius:2.5rem;
+width: 500px;
+margin: auto;
+        }
+ .submit-button {
+width:100% ;
+padding:0.75rem;
+background:red;
+color:white;
+border-radius: 10px;
+cursor: pointer;
+ }
+.color{
+    color: black;
+}
+
+ }
+       .heading-input{
+           margin:o auto 1,25rem auto;
+           padding:0.25rem;
+
+       } 
+        .form-input{
+            display: block;
+            width: 90%;
+            height: 2rem;
+            padding: 0.25rem 0.75rem;
+            background-color:#7db3c0 ;
+            border: 1px solid #4996e2;
+            border-radius: 0.25rem;
+
+        }
+        </style>
+    <head>
+        <h1 id="title" class="color">Tesla Model Purchased</h1>
+    </head>
+    <body>
+    <p id="description" class="color">Fill details to complete your Tesla order</p>
+    <form id="survey-form">
+        <div class="heading-input">
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" placeholder="e.g: Elon Musk" class="form-input" required>
+    <br>
+    <label for="email" id="email-label">E-mail</label>
+<input id="email" type="text" placeholder="e.g: xyz@gmail.com" class="form-input" required>
+<br>
+<label for="number" id="number-label">Age</label>
+<input id="number" type="number" placeholder="e.g: 19" min="18" max="100" class="form-input"  required>
+<br>
+<label for="dropdown">Select Model</label>
+<select id="dropdown" class="form-input" >
+<option value="Model_1">Model 1</option>
+<option value="Model_2">Model 2</option>
+<option value="Model_3">Model 3</option>
+<option value="Model_4">Model 4</option>
+</select>
+<br>
+<br>
+<label for="model_color"><b>Model Color</b></label>
+<br>
+<input id="model_color" type="radio" name="color" value="black">
+<label for="model_color">black</label> 
+<br>
+<input id="model_color" type="radio" name="color" value="pink">
+<label for="model_color">pink</label>
+<br>
+<input id="model_color" type="radio" name="color" value="yellow">
+<label for="model_color">yellow</label> 
+<br>
+<br>
+
+<label for="features"><b>Add Features</b></label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value="autopilot">
+<label for="checkbox">Full self-driving (Autopilot) - $10,000</label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value="dual_Motor">
+<label for="checkbox">Dual Motor (All wheel drive) - $15,000</label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value="battery">
+<label for="checkbox">Performance Plus (Enhance Battery) - $12,000</label>
+<br>
+<label for="textarea">Additional Comments</label>
+<br>
+<textarea id="textarea" name="insructions" rows="5" columns="40">
+</textarea>
+<br>
+<br>
+<label for="submit">Final Submission</label>
+<br>
+<input id="submit" type="submit" value="Place Order" class="submit-button">
+<br>
+</div>
+</form>
+</body>
+</html>
